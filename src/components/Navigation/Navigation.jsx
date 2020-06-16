@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navigation.scss"
 
-const Navigation = (props) => {
+const Navigation = () => {
     return (
         <>
             <nav className="navigation">
