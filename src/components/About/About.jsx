@@ -14,7 +14,22 @@ const About = () => {
         <img src={ShinImage2} alt="ShinDaimon" />
       </div>
       <div className="about--description">
+        <h1>Shin Daimon</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid culpa quae ut animi! Dignissimos laboriosam libero perspiciatis voluptate, nobis sunt reprehenderit aperiam saepe dolorem sit. Blanditiis dolor non unde quisquam!</p>
+        <div>
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SASS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a href="#">Resume</a>
+        <a href="#">Email</a>
       </div>
     </section>
   );
