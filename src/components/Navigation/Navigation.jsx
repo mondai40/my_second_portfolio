@@ -3,15 +3,13 @@ import "./Navigation.scss"
 
 const Navigation = () => {
     return (
-        <>
-            <nav className="navigation">
-                <ul className="navigation--textList">
-                    <li>About</li>
-                    <li>Works</li>
-                    <li>Skills</li>
-                </ul>
-            </nav>
-        </>
+      <nav className="navigation">
+        <ul className="navigation__list">
+          <li className="navigation--item">About</li>
+          <li className="navigation--item">Works</li>
+          <li className="navigation--item">Skills</li>
+        </ul>
+      </nav>
     );
 };
 
