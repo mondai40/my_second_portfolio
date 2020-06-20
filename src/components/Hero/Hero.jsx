@@ -1,18 +1,18 @@
 import React from "react";
 import "./Hero.scss"
-import ShinImage from "../../img/ShinDaimon.jpg";
+import ShinImage from "../../img/ShinDaimon.png";
 import HeroHeading from "./HeroHeading.svg";
 
 const Hero = () => {
   return (
     <section id="hero">
-      <div className="hero--heading">
+      <div className="hero__heading">
         <img src={HeroHeading} alt="ShinDaimonHeading" />
       </div>
-      <div className="hero--image">
+      <div className="hero__image">
         <img src={ShinImage} alt="ShinDaimon" />
       </div>
-      <div className="hero-arrow"></div>
+      <div className="hero--arrow"><a href="#about" className="arrow__link"></a></div>
     </section>
   );
 }
