@@ -10,9 +10,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 
+  &__logo {
+    z-index: 2;
+  }
   &__logo--img {
     width: 50px;
+    transform-origin: 50% 50%;
+    animation: roundCircle 6s infinite linear;
   }
 
   &__hamburger {
@@ -21,6 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 3;
   }
   &__hamburger-line {
     width: 100%;
@@ -38,5 +45,14 @@
   }
   &__hamburger--cross:nth-child(3) {
     transform: translateY(-15px) rotate(-45deg);
+  }
+
+  @keyframes roundCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
