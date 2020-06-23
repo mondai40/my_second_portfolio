@@ -7,11 +7,17 @@
   &__sns {
     width: 70%;
     height: 100%;
-    margin: 0 auto;
+    margin: 10px auto 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+  &--link {
+    text-decoration: none;
+    color: #fff;
   }
   &__item {
     display: block;
+    margin: 0px 10px;
+    font-size: 1.5rem;
   }
 }
