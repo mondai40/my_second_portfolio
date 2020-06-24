@@ -1,7 +1,7 @@
 import React from "react";
 import "./Works.scss";
 import WorkHeading from "./WorkHeading.svg";
-
+import WorkSlider from "./WorkSlider"
 
 const Works = () => {
   return(
@@ -9,12 +9,7 @@ const Works = () => {
       <div className="works__heading">
         <img src={WorkHeading} alt="WorkHeading" />
       </div>
-      <div className="works__image">
-        imgimgimgimg
-        <div className="arrow arrow--right"></div>
-        <div className="arrow arrow--left"></div>
-        <div></div>
-      </div>
+      <WorkSlider />
     </section>
   );
 };
