@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./WorkSlider.scss"
 
 import Work from "./Work";
 import { WorkList } from "./WorkList"
@@ -14,10 +15,21 @@ const renderWork = (WorkList) => {
   );
 };
 
+// const CustomArrow = (props) => {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{ ...style, marginLeft: "50px"}}
+//       onClick={onClick}
+//     />
+//   );
+// }
+
 const WorkSlider = () => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
