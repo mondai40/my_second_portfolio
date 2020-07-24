@@ -1,0 +1,23 @@
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+
+
+  &__sns {
+    width: 70%;
+    height: 100%;
+    margin: 10px auto 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &--link {
+    text-decoration: none;
+    color: #fff;
+  }
+  &__item {
+    display: block;
+    margin: 0px 10px;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+<svg width="367" height="75" viewBox="0 0 367 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style>
+			.text {
+				stroke: white;
+				text-anchor: middle;
+				font-family: "Helvetica";
+        font-size: 64px;
+        fill: none;
+				stroke-dasharray: 500px;
+				animation: text-move 1s ease-in;
+			}
+			.head {
+				animation: text-fill 0.5s 0.5s ease-in forwards;
+			}
+			@keyframes text-move {
+				0% {
+					stroke-dashoffset: 500px;
+				}
+				100% {
+					stroke-dashoffset: 0px;
+				}
+			}
+			@keyframes text-fill {
+				0% {
+					fill: transparent;
+				}
+				100% {
+					fill: white;
+				}
+			}
+		</style>
+	</defs>
+	<text x="50%" y="60px" class="text head">Works</text>
+	<line x1="90" y1="73.5" x2="280" y2="73.5" class="text"/>
+</svg>
