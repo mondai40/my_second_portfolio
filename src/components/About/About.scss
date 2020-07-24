@@ -40,33 +40,70 @@
         font-size: 1.2rem;
         margin-bottom: 10px;
       }
-      ul {
-        list-style: none;
-        display: flex;
-        li {
-          margin-right: 10px;
-          font-size: 14px;
-          border: 1px solid #1C262F;
-          border-radius: 5px;
-          padding: 5px;
-        }
-      }
     }
+
     .about__button {
       margin-top: 30px;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
     }
   }
 }
 
-.btn {
-  display: block;
-  width: 150px;
-  height: 50px;
-  background: #1C262F;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
-  text-decoration: none;
+/* for tablet */
+@media screen and (min-width: 768px) {
+  .about {
+    &__heading {
+      transform: scale(2) rotate(90deg);
+      position: absolute;
+      top: 193px;
+      left: -80px;
+    }
+
+    &__image {
+      margin: 70px -50px 30px 70px;
+    }
+
+    &__description {
+      margin: 0px 70px 40px;
+      p {
+        line-height: 2rem;
+        font-size: 20px;
+      }
+
+      .about__skill {
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+/* for laptop */
+@media screen and (min-width: 1024px) {
+  .about {
+    width: 100%;
+    // height: 100vh;
+    background: #AFC2C9;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__heading {
+      transform: scale(2) rotate(90deg);
+      position: absolute;
+      top: 200px;
+      left: -10px;
+    }
+
+    &__image {
+      margin: -30px 40px -30px 150px;
+    }
+
+    &__description {
+      margin: 0 40px;
+    }
+  }
 }
