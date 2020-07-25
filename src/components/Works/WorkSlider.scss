@@ -8,3 +8,8 @@
   position: static;
   bottom: 0px;
 }
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #ffffff
+}

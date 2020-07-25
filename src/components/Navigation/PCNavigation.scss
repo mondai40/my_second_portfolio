@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.pcNavigation {
+  width: 30%;
+  font-family: "Didot";
+  font-size: 1.2em;
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}

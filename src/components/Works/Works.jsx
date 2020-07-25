@@ -1,6 +1,6 @@
 import React from "react";
 import "./Works.scss";
-import WorkHeading from "./WorkHeading.svg";
+import WorkHeading from "../../img/WorkHeading.svg";
 import WorkSlider from "./WorkSlider"
 
 const Works = () => {

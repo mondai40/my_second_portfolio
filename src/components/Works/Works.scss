@@ -10,3 +10,13 @@
     text-align: center;
   }
 }
+
+/* for tablet */
+@media screen and (min-width: 768px) {
+  .works {
+    &__heading {
+      transform: scale(2);
+      margin: 60px auto;
+    }
+  }
+}
