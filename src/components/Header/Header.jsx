@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import MediaQuery from "react-responsive";
+
 import headerLogo from "../../img/headerLogo.svg";
+import SmartNavigation from "../Navigation/SmartNavigation";
+import PCNavigation from "../Navigation/PCNavigation";
+
+
 import "./Header.scss"
-import Navigation from "../Navigation/Navigation";
 
 const Header = () => {
   const [isShow, setShow] = useState(false);
@@ -16,17 +21,23 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header__logo" onClick={isShow && handleClick}>
+      <div className="header__logo" onClick={isShow ? handleClick : function(){}}>
         <a href="#hero">
           <img className="header__logo--img" src={headerLogo} alt="headerLogo" />
+          <span className="header__logo--title">Shin Daimon</span>
         </a>
       </div>
-      <div className="header__hamburger" onClick={handleClick}>
-        <span className="header__hamburger-line"></span>
-        <span className="header__hamburger-line"></span>
-        <span className="header__hamburger-line"></span>
-      </div>
-      <Navigation modalShow={isShow} handleClick={handleClick} />
+      <MediaQuery query="(max-width: 1023px)">
+        <div className="header__hamburger" onClick={handleClick}>
+          <span className="header__hamburger-line"></span>
+          <span className="header__hamburger-line"></span>
+          <span className="header__hamburger-line"></span>
+        </div>
+        <SmartNavigation modalShow={isShow} handleClick={handleClick} />
+      </MediaQuery>
+      <MediaQuery query="(min-width: 1024px)">
+        <PCNavigation />
+      </MediaQuery>
     </header>
   );
 };

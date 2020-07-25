@@ -17,8 +17,14 @@
   }
   &__logo--img {
     width: 50px;
-    transform-origin: 50% 50%;
     animation: roundCircle 6s infinite linear;
+  }
+  &__logo--title {
+    display: none;
+    font-family: "Didot";
+    font-size: 2rem;
+    line-height: 90px;
+    letter-spacing: 2px;
   }
 
   &__hamburger {
@@ -56,3 +62,24 @@
     }
   }
 }
+
+/* medium screen*/
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 50px;
+    &__logo--img {
+      display: none;
+    }
+    &__logo--title {
+      display: block;
+    }
+  }
+}
+/* large screen*/
+// @media screen and (min-width: 1024px) {
+//   .header {
+//     &__hamburger {
+//       display: none;
+//     }
+//   }
+// }
