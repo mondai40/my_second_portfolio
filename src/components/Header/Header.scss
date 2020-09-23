@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  transition: all 0.5s;
 
   &__logo {
     z-index: 2;
@@ -51,6 +52,11 @@
   }
   &__hamburger--cross:nth-child(3) {
     transform: translateY(-15px) rotate(-45deg);
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 
   @keyframes roundCircle {
