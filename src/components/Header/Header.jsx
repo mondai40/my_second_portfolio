@@ -1,29 +1,48 @@
-import React, { useState } from "react";
-import MediaQuery from "react-responsive";
+import React, { useState, useRef, useEffect } from 'react';
+import MediaQuery from 'react-responsive';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
-import headerLogo from "../../img/headerLogo.svg";
-import SmartNavigation from "../Navigation/SmartNavigation";
-import PCNavigation from "../Navigation/PCNavigation";
+import headerLogo from '../../img/headerLogo.svg';
+import SmartNavigation from '../Navigation/SmartNavigation';
+import PCNavigation from '../Navigation/PCNavigation';
 
-
-import "./Header.scss"
+import './Header.scss';
 
 const Header = () => {
   const [isShow, setShow] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    if (currPos.y >= -100) return;
+    if (currPos.y - prevPos.y < 0) {
+      console.log('go down');
+      setHideHeader(true);
+    } else if (currPos.y - prevPos.y > 0) {
+      console.log('go up');
+      setHideHeader(false);
+    }
+  });
 
   const handleClick = () => {
-    const lines = document.querySelectorAll(".header__hamburger-line");
+    const lines = document.querySelectorAll('.header__hamburger-line');
     lines.forEach((line) => {
-      line.classList.toggle("header__hamburger--cross");
+      line.classList.toggle('header__hamburger--cross');
     });
     setShow(!isShow);
   };
 
   return (
-    <header className="header">
-      <div className="header__logo" onClick={isShow ? handleClick : function(){}}>
+    <header className={hideHeader ? 'header scrollHide' : 'header'} id="header">
+      <div
+        className="header__logo"
+        onClick={isShow ? handleClick : function () {}}
+      >
         <a href="#hero">
-          <img className="header__logo--img" src={headerLogo} alt="headerLogo" />
+          <img
+            className="header__logo--img"
+            src={headerLogo}
+            alt="headerLogo"
+          />
           <span className="header__logo--title">Shin Daimon</span>
         </a>
       </div>

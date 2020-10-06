@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  transition: all 0.5s;
 
   &__logo {
     z-index: 2;
@@ -53,6 +54,11 @@
     transform: translateY(-15px) rotate(-45deg);
   }
 
+  &.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
   @keyframes roundCircle {
     0% {
       transform: rotate(0deg);
@@ -76,10 +82,12 @@
   }
 }
 /* large screen*/
-// @media screen and (min-width: 1024px) {
-//   .header {
-//     &__hamburger {
-//       display: none;
-//     }
-//   }
-// }
+@media screen and (min-width: 1024px) {
+  .header {
+    transition: all 0.3s;
+    &.scrollHide {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+}
