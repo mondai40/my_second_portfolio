@@ -82,10 +82,12 @@
   }
 }
 /* large screen*/
-// @media screen and (min-width: 1024px) {
-//   .header {
-//     &__hamburger {
-//       display: none;
-//     }
-//   }
-// }
+@media screen and (min-width: 1024px) {
+  .header {
+    transition: all 0.3s;
+    &.scrollHide {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+}
