@@ -1,4 +1,3 @@
-
 [
   {
     "title": "youtube",
@@ -18,4 +17,4 @@
     "description": "This is for test for extension thanks",
     "technologies": ["HTML", "CSS", "JavaScript"]
   }
-];
+]
