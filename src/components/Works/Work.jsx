@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import SkillList from "../shared/Skill/SkillList";
+import SkillList from '../shared/Skill/SkillList';
 
-import "./Work.scss";
+import './Work.scss';
 
 const Work = (props) => {
-  const {title, image, description, technologies} = props.info;
+  const { title, image, description, technologies } = props.info;
   return (
     <div className="work">
-      <img src={image} alt={`${title}Image`} className="work__image"/>
+      <img src={image} alt={title} className="work__image" />
       <h1 className="work__heading">{title}</h1>
       <p className="work__description">{description}</p>
       <div className="work__technologies">
-        <SkillList skills={technologies}/>
+        <SkillList skills={technologies} />
       </div>
     </div>
   );
