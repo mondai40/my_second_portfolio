@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AboutHeadingImage from '../../img/AboutHeadingImage.svg';
+// import AboutHeadingImage from '../../img/AboutHeadingImage.svg';
 import SkillList from '../shared/Skill/SkillList';
 import Button from '../shared/Button/Button';
 import profileData from '../../fixtures/profile.json';
@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about__heading">
-        <img src={AboutHeadingImage} alt="AboutHeadingImage" />
+        <img src="/img/AboutHeadingImage.svg" alt="AboutHeadingImage" />
       </div>
       <div className="about__image">
         <img src={image} alt="ShinDaimon" />
