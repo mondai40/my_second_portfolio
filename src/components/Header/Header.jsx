@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import MediaQuery from 'react-responsive';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
-import headerLogo from '../../img/headerLogo.svg';
+// import headerLogo from '../../img/headerLogo.svg';
 import SmartNavigation from '../Navigation/SmartNavigation';
 import PCNavigation from '../Navigation/PCNavigation';
 
@@ -40,7 +40,7 @@ const Header = () => {
         <a href="#hero">
           <img
             className="header__logo--img"
-            src={headerLogo}
+            src="/img/headerLogo.svg"
             alt="headerLogo"
           />
           <span className="header__logo--title">Shin Daimon</span>
