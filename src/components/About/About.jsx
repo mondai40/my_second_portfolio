@@ -1,15 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import AboutHeadingImage from "../../img/AboutHeadingImage.svg";
-import SkillList from "../shared/Skill/SkillList";
-import Button from "../shared/Button/Button";
-import AboutInfo from "./AboutInfo";
-import "./About.scss";
+import AboutHeadingImage from '../../img/AboutHeadingImage.svg';
+import SkillList from '../shared/Skill/SkillList';
+import Button from '../shared/Button/Button';
+import profileData from '../../fixtures/profile.json';
 
-const {name, image, description, skills, emailUrl, resumeUrl} = AboutInfo;
+import './About.scss';
+
+const { name, image, description, skills, emailUrl, resumeUrl } = profileData;
 
 const About = () => {
-  return(
+  return (
     <section id="about" className="about">
       <div className="about__heading">
         <img src={AboutHeadingImage} alt="AboutHeadingImage" />
@@ -22,7 +23,7 @@ const About = () => {
         <p>{description}</p>
         <div className="about__skill">
           <h2>Skills</h2>
-          <SkillList skills={skills}/>
+          <SkillList skills={skills} />
         </div>
         <div className="about__button">
           <Button to={resumeUrl}>Resume</Button>
