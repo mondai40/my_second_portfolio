@@ -10,6 +10,7 @@ import './About.scss';
 const { name, image, description, skills, emailUrl, resumeUrl } = profileData;
 
 const About = () => {
+  console.log('here', profileData);
   return (
     <section id="about" className="about">
       <div className="about__heading">
