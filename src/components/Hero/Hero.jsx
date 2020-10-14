@@ -9,9 +9,9 @@ const Hero = () => {
       <div className="hero__heading">
         <img src="/img/HeroHeading.svg" alt="ShinDaimonHeading" />
       </div>
-      <div className="hero__image">
+      {/* <div className="hero__image">
         <img src="/img/ShinDaimon.png" alt="ShinDaimon" />
-      </div>
+      </div> */}
       {/* <div className="hero--arrow"><a href="#about" className="arrow__link"></a></div> */}
     </section>
   );
