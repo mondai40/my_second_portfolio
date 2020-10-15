@@ -1,0 +1,22 @@
+{
+  "name": "Shin Daimon",
+  "image": "/img/ShinDaimon2.JPG",
+  "description": "My name is Shin, I am a Front End Developer based in Vancouver. I used to work as a customer support engineer of authentication software, IceWall. Now, I am proficient in HTML5, CSS3, JavaScript, and React. I am passionate about writing simple, clean and stable code.",
+  "skills": [
+    "HTML5",
+    "CSS5",
+    "JavaScript",
+    "SCSS",
+    "React",
+    "Git",
+    "Node.js",
+    "Express.js",
+    "mongodb",
+    "MySQL",
+    "PostgreSQL",
+    "git",
+    "Figma"
+  ],
+  "emailUrl": "mailto:tvwmdaimon40@gmail.com",
+  "resumeUrl": "/pdf/ShinDaimonResume.pdf"
+}
