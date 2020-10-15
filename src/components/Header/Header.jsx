@@ -24,36 +24,19 @@ const Header = () => {
   });
 
   const handleClick = () => {
-    // const lines = document.querySelectorAll('.header__hamburger-line');
-    // lines.forEach((line) => {
-    //   line.classList.toggle('header__hamburger--cross');
-    // });
     setShow(!isShow);
   };
 
   return (
     <header className={hideHeader ? 'header scrollHide' : 'header'} id="header">
-      <div
-        className="header__logo"
-        onClick={isShow ? handleClick : function () {}}
-      >
-        <a href="#hero">
-          <img
-            className="header__logo--img"
-            src="/img/headerLogo.svg"
-            alt="headerLogo"
-          />
-          <span className="header__logo--title">Shin Daimon</span>
-        </a>
+      <div className="header__title">
+        <a href="#hero">Shin Daimon</a>
       </div>
       <MediaQuery query="(max-width: 1023px)">
-        <div className="header__hamburger" onClick={handleClick}>
-          {/* <span className="header__hamburger-line"></span>
-          <span className="header__hamburger-line"></span>
-          <span className="header__hamburger-line"></span> */}
+        <div className="header__hamburger" onClick={() => handleClick()}>
           <Hamburger isShow={isShow} />
         </div>
-        <SmartNavigation modalShow={isShow} handleClick={handleClick} />
+        <SmartNavigation modalShow={isShow} handleClick={() => handleClick()} />
       </MediaQuery>
       <MediaQuery query="(min-width: 1024px)">
         <PCNavigation />
