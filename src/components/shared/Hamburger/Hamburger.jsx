@@ -8,9 +8,9 @@ const handleClick = () => {
   hamburger.classList.toggle('open');
 };
 
-const Hamburger = () => {
+const Hamburger = ({ isShow }) => {
   return (
-    <div className="hamburger" onClick={handleClick}>
+    <div className={isShow ? 'hamburger show' : 'hamburger'}>
       <span className="hamburger__line"></span>
       <span className="hamburger__line"></span>
       <span className="hamburger__line"></span>
