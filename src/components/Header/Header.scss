@@ -13,45 +13,18 @@
   z-index: 2;
   transition: all 0.5s;
 
-  &__logo {
-    z-index: 2;
-  }
-  &__logo--img {
-    width: 50px;
-    animation: roundCircle 6s infinite linear;
-  }
-  &__logo--title {
-    display: none;
-    font-family: "Didot";
-    font-size: 2rem;
-    line-height: 90px;
-    letter-spacing: 2px;
+  &__title {
+    & a {
+      display: none;
+      font-family: 'Didot';
+      font-size: 2rem;
+      line-height: 90px;
+      letter-spacing: 2px;
+    }
   }
 
   &__hamburger {
-    width: 50px;
-    height: 43px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     z-index: 3;
-  }
-  &__hamburger-line {
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    display: block;
-    transition: all 0.3s;
-  }
-
-  &__hamburger--cross:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
-  }
-  &__hamburger--cross:nth-child(2) {
-    opacity: 0;
-  }
-  &__hamburger--cross:nth-child(3) {
-    transform: translateY(-15px) rotate(-45deg);
   }
 
   &.hide {
@@ -73,11 +46,10 @@
 @media screen and (min-width: 768px) {
   .header {
     padding: 50px;
-    &__logo--img {
-      display: none;
-    }
-    &__logo--title {
-      display: block;
+    &__title {
+      & a {
+        display: block;
+      }
     }
   }
 }
