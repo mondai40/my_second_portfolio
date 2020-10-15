@@ -5,7 +5,7 @@
     "image": "/img/works/myPortfolio.png",
     "description": "This is the page you are browsing now. I used SVG animation for the heading for each sections. ",
     "github": "https://github.com/mondai40/my_second_portfolio",
-    "livePage": "https://shindaimon.com",
+    "livePage": "https://shindaimonportfolio.netlify.app/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "React"]
   },
   {
