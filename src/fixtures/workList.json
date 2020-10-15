@@ -1,20 +1,20 @@
 [
   {
-    "title": "youtube",
-    "image": "/img/ShinDaimon.png",
-    "description": "This is for test for youtube thanks",
-    "technologies": ["HTML", "CSS", "JavaScript"]
+    "title": "My Portfolio",
+    "subTitle": "This is the page you are browsing now.",
+    "image": "/img/works/myPortfolio.png",
+    "description": "This is the page you are browsing now. I used SVG animation for the heading for each sections. ",
+    "github": "https://github.com/mondai40/my_second_portfolio",
+    "livePage": "https://shindaimon.com",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React"]
   },
   {
-    "title": "sushi",
-    "image": "/img/ShinDaimon.png",
-    "description": "This is for test for sushi thanks",
-    "technologies": ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    "title": "extension",
-    "image": "/img/ShinDaimon.png",
-    "description": "This is for test for extension thanks",
-    "technologies": ["HTML", "CSS", "JavaScript"]
+    "title": "NRC19",
+    "subTitle": "A Line bot which tells you covid-19 information",
+    "image": "/img/works/nrc19.png",
+    "description": "google script, lerem ",
+    "github": "https://github.com/mondai40/NRC19",
+    "livePage": "",
+    "technologies": ["Google Apps Script", "JavaScript"]
   }
 ]
