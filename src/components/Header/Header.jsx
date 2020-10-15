@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import MediaQuery from 'react-responsive';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
-// import headerLogo from '../../img/headerLogo.svg';
+import Hamburger from '../shared/Hamburger/Hamburger';
 import SmartNavigation from '../Navigation/SmartNavigation';
 import PCNavigation from '../Navigation/PCNavigation';
 
@@ -24,10 +24,10 @@ const Header = () => {
   });
 
   const handleClick = () => {
-    const lines = document.querySelectorAll('.header__hamburger-line');
-    lines.forEach((line) => {
-      line.classList.toggle('header__hamburger--cross');
-    });
+    // const lines = document.querySelectorAll('.header__hamburger-line');
+    // lines.forEach((line) => {
+    //   line.classList.toggle('header__hamburger--cross');
+    // });
     setShow(!isShow);
   };
 
@@ -48,9 +48,10 @@ const Header = () => {
       </div>
       <MediaQuery query="(max-width: 1023px)">
         <div className="header__hamburger" onClick={handleClick}>
+          {/* <span className="header__hamburger-line"></span>
           <span className="header__hamburger-line"></span>
-          <span className="header__hamburger-line"></span>
-          <span className="header__hamburger-line"></span>
+          <span className="header__hamburger-line"></span> */}
+          <Hamburger isShow={isShow} />
         </div>
         <SmartNavigation modalShow={isShow} handleClick={handleClick} />
       </MediaQuery>
