@@ -1,7 +1,25 @@
 [
   {
+    "title": "Netflix clone",
+    "subTitle": "Followed Karl Hadwen's Youtube video",
+    "image": "/img/works/netflixClone.png",
+    "description": "Netflix clone with  ",
+    "github": "https://github.com/mondai40/Netflix-clone",
+    "livePage": "https://frosty-dubinsky-295bad.netlify.app/",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Jest"]
+  },
+  {
+    "title": "COVID-19 TRACKER",
+    "subTitle": "Followed Clever Programmer Youtube video",
+    "image": "/img/works/covid19Tracker.png",
+    "description": "COVID-19 clone with  ",
+    "github": "https://github.com/mondai40/COVID19-Tracker",
+    "livePage": "https://covid19-tracker-9f045.web.app/",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React"]
+  },
+  {
     "title": "My Portfolio",
-    "subTitle": "This is the page you are browsing now.",
+    "subTitle": "I want you to know a little bit of me",
     "image": "/img/works/myPortfolio.png",
     "description": "This is the page you are browsing now. I used SVG animation for the heading for each sections. ",
     "github": "https://github.com/mondai40/my_second_portfolio",
