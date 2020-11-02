@@ -1,23 +1,12 @@
 import React from 'react';
 
+import ModalButton from '../shared/ModalButton/ModalButton';
 import SkillList from '../shared/Skill/SkillList';
 
 import './Work.scss';
 
-const clickHandler = () => {
-  console.log('hello');
-};
-
 const Work = (props) => {
-  const {
-    title,
-    subTitle,
-    image,
-    description,
-    github,
-    livePage,
-    technologies,
-  } = props.info;
+  const { title, subTitle, image, livePage, technologies } = props.info;
 
   return (
     <div className="work">
@@ -32,13 +21,7 @@ const Work = (props) => {
         </h1>
         <p>{subTitle}</p>
         <div className="work__detailBtn">
-          <button
-            onClick={() => {
-              clickHandler();
-            }}
-          >
-            more details
-          </button>
+          <ModalButton data={props.info} />
         </div>
         <div className="work__technologies">
           <SkillList skills={technologies} />
