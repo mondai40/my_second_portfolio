@@ -1,14 +1,17 @@
 @charset "utf-8";
 
 .modalContent {
-  width: 80%;
-  margin: 20px auto;
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 90%;
+  margin: 0px auto;
 
-  .modalContent__image {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
@@ -19,29 +22,34 @@
       z-index: 5;
     }
   }
-  .modalContent__info {
-    width: 100%;
+
+  &__info {
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+  &__description {
+    margin-bottom: 20px;
+    & ul {
+      padding-left: 20px;
+    }
+  }
+
+  &__linkBtn {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    & p {
-      line-height: 1.5rem;
-      font-size: 14px;
-    }
-    & h1 {
-      margin-bottom: 10px;
-      & i {
-        margin-left: 10px;
-      }
-    }
+    margin-bottom: 20px;
+  }
 
-    & .modalContent__technologies {
-      margin-top: 20px;
-    }
+  &__technologies {
+    margin-bottom: 20px;
+  }
+  &__closeBtn {
+    margin-bottom: 20px;
+  }
 
-    & .skill__item {
-      border-color: #ffffff;
-    }
+  &__closeIcon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
   }
 }

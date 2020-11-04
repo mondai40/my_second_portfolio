@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-import ModalContent from './MondalContent';
+import ModalContent from './ModalContent';
 
 function ModalButton({ data }) {
   const [showModal, setShowModal] = useState(false);
+
+  const customStyles = {
+    overlay: {
+      'z-index': '10',
+    },
+  };
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -19,11 +25,10 @@ function ModalButton({ data }) {
       <button onClick={() => handleOpenModal()}>More Details</button>
       <Modal
         isOpen={showModal}
-        contentLabel="onRequestClose Example"
         onRequestClose={handleCloseModal}
+        style={customStyles}
       >
-        <ModalContent data={data} />
-        <button onClick={() => handleCloseModal()}>Close</button>
+        <ModalContent data={data} handleCloseModal={handleCloseModal} />
       </Modal>
     </div>
   );
