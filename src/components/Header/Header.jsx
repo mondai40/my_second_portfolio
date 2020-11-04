@@ -15,10 +15,8 @@ const Header = () => {
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y >= -100) return;
     if (currPos.y - prevPos.y < 0) {
-      console.log('go down');
       setHideHeader(true);
     } else if (currPos.y - prevPos.y > 0) {
-      console.log('go up');
       setHideHeader(false);
     }
   });

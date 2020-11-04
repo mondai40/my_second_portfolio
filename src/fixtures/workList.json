@@ -3,7 +3,13 @@
     "title": "Netflix clone",
     "subTitle": "Followed Karl Hadwen's Youtube video",
     "image": "/img/works/netflixClone.png",
-    "description": "Netflix clone with  ",
+    "description": [
+      "Created components with styled-components",
+      "Created methods tree-shaking and compound components",
+      "etched data from Cloud Firestore",
+      "Tested by using Jest and react",
+      "Deployed it on netlify"
+    ],
     "github": "https://github.com/mondai40/Netflix-clone",
     "livePage": "https://frosty-dubinsky-295bad.netlify.app/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Jest"]
@@ -12,7 +18,14 @@
     "title": "COVID-19 TRACKER",
     "subTitle": "Followed Clever Programmer Youtube video",
     "image": "/img/works/covid19Tracker.png",
-    "description": "COVID-19 clone with  ",
+    "description": [
+      "Created some components with Material-UI",
+      "Fetched data from https://disease.sh",
+      "Created chars by using Chart.js",
+      "Created a map by using Leaflet",
+      "Used Bem methodology for class naming",
+      "Deployed on firebase"
+    ],
     "github": "https://github.com/mondai40/COVID19-Tracker",
     "livePage": "https://covid19-tracker-9f045.web.app/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "React"]
@@ -21,7 +34,11 @@
     "title": "My Portfolio",
     "subTitle": "I want you to know a little bit of me",
     "image": "/img/works/myPortfolio.png",
-    "description": "This is the page you are browsing now. I used SVG animation for the heading for each sections. ",
+    "description": [
+      "Created animation titles with SVG",
+      "Created a slide with react-slick",
+      "Created modal popups with react-modal"
+    ],
     "github": "https://github.com/mondai40/my_second_portfolio",
     "livePage": "https://shindaimonportfolio.netlify.app/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "React"]
@@ -30,7 +47,11 @@
     "title": "NRC19",
     "subTitle": "A Line bot which tells you covid-19 information",
     "image": "/img/works/nrc19.png",
-    "description": "google script, lerem ",
+    "description": [
+      "Fetched data from https://github.com/kaz-ogiwara/covid19/tree/master/data",
+      "Coded in GoogleScript",
+      "Configure a bot on Line"
+    ],
     "github": "https://github.com/mondai40/NRC19",
     "livePage": "",
     "technologies": ["Google Apps Script", "JavaScript"]
