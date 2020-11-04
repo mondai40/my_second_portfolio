@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import AboutHeadingImage from '../../img/AboutHeadingImage.svg';
 import SkillList from '../shared/Skill/SkillList';
 import Button from '../shared/Button/Button';
 import profileData from '../../fixtures/profile.json';
@@ -10,7 +9,6 @@ import './About.scss';
 const { name, image, description, skills, emailUrl, resumeUrl } = profileData;
 
 const About = () => {
-  console.log('here', profileData);
   return (
     <section id="about" className="about">
       <div className="about__heading">
@@ -29,8 +27,6 @@ const About = () => {
         <div className="about__button">
           <Button to={resumeUrl}>Resume</Button>
           <Button to={emailUrl}>Email</Button>
-          {/* <a className="about__button--btn btn" href="#hero">Resume</a>
-          <a className="about__button--btn btn" href="#hero">Email</a> */}
         </div>
       </div>
     </section>
