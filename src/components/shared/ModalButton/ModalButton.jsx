@@ -8,7 +8,10 @@ function ModalButton({ data }) {
 
   const customStyles = {
     overlay: {
-      'z-index': '10',
+      zIndex: '10',
+    },
+    content: {
+      paddingTop: '50px',
     },
   };
 
@@ -27,6 +30,7 @@ function ModalButton({ data }) {
         isOpen={showModal}
         onRequestClose={handleCloseModal}
         style={customStyles}
+        ariaHideApp={false}
       >
         <ModalContent data={data} handleCloseModal={handleCloseModal} />
       </Modal>

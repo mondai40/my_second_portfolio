@@ -30,7 +30,7 @@ function MondalContent(props) {
           <div className="modalContent__description">
             <ul>
               {description.map((desc, index) => (
-                <li>{desc}</li>
+                <li key={index}>{desc}</li>
               ))}
             </ul>
           </div>
@@ -43,7 +43,7 @@ function MondalContent(props) {
         </div>
       </div>
       <div className="modalContent__closeIcon">
-        <i class="fas fa-times" onClick={() => handleCloseModal()}></i>
+        <i className="fas fa-times" onClick={() => handleCloseModal()}></i>
       </div>
     </div>
   );
