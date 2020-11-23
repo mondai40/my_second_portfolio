@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Button.scss';
 
-const Button = (props) => (
-  <a href={props.to} className="btn" target="_blank" rel="noopener noreferrer">
-    {props.children}
+const Button = ({ children, to }) => (
+  <a href={to} className="btn" target="_blank" rel="noopener noreferrer">
+    {children}
   </a>
 );
 

@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 
 import ModalContent from './ModalContent';
 
+import './ModalButton.scss';
+
 function ModalButton({ data }) {
   const [showModal, setShowModal] = useState(false);
 
@@ -24,8 +26,10 @@ function ModalButton({ data }) {
   };
 
   return (
-    <div>
-      <button onClick={() => handleOpenModal()}>More Details</button>
+    <div className="modalButton">
+      <button className="modalButton__btn" onClick={handleOpenModal}>
+        More Details
+      </button>
       <Modal
         isOpen={showModal}
         onRequestClose={handleCloseModal}
