@@ -12,10 +12,12 @@
     position: absolute;
     top: 113px;
     left: -130px;
+    z-index: 5;
   }
 
   &__image {
     margin: 70px -50px 30px 30px;
+    overflow: hidden;
     img {
       width: 100%;
     }

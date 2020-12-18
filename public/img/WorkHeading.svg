@@ -11,7 +11,7 @@
 				animation: text-move 1s ease-in;
 			}
 			.head {
-				animation: text-fill 0.5s 0.5s ease-in forwards;
+				animation: text-fill 1s ease-in forwards;
 			}
 			@keyframes text-move {
 				0% {
@@ -24,10 +24,15 @@
 			@keyframes text-fill {
 				0% {
 					fill: transparent;
+					stroke-dashoffset: 500px;
 				}
-				100% {
-					fill: white;
+				50% {
+					fill: transparent;
+					stroke-dashoffset: 0px;
 				}
+        100% {
+          fill: white;
+        }
 			}
 		</style>
 	</defs>
